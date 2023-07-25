@@ -1,0 +1,38 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "regenerator": true
+            }
+        ],
+        [
+            "prismjs",
+            {
+                "languages": [
+                    "typescript",
+                    "javascript",
+                    "css",
+                    "markup",
+                    "less",
+                    "keepalived"
+                ],
+                "plugins": [
+                    // "line-highlight",
+                    "line-numbers",
+                    "toolbar",
+                    "copy-to-clipboard",
+                    "match-braces"
+                ],
+                "theme": "default",
+                // "theme": "dark",
+                // "theme": "solarizedLight",
+                "css": true
+            }
+        ]
+    ]
+}
